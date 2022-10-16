@@ -1,0 +1,28 @@
+html { 
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; 
+  min-width: none;height: 100%;
+}
+
+.contanier {
+  max-width: 1728px;
+  display: grid;
+  grid-template-columns: 6em 33em 1fr;
+}
+
+
+ol, li { list-style: none; }
+
+a { text-decoration: none;}
+
+.nav-menu {
+  background-color: #ffc297;
+
+}
