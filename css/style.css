@@ -1,28 +1,108 @@
-html { 
-  height: 100%;
-  font-size: 62.5%;
+html {
+  font-size: 100%;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; 
-  min-width: none;height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .contanier {
   max-width: 1728px;
-  display: grid;
-  grid-template-columns: 6em 33em 1fr;
+  min-height: 100vh;
 }
 
+.contanier > * {
+  /* padding-top: 40px; */
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-ol, li { list-style: none; }
+a {
+  text-decoration: none;
+}
 
-a { text-decoration: none;}
+.flex-nav {
+  display: flex;
+}
+
+/* Navigation bar */
+.nav-menu_ol,
+.options-nav_ul {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-menu_ol {
+  min-height: 60%;
+}
+
+.nav-menu_ol {
+  align-items: center;
+}
 
 .nav-menu {
   background-color: #ffc297;
+  padding: 2.5em;
+}
 
+.logo-image,
+.setting-image {
+  width: 65px;
+  height: 65px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.nav-menu_ol li:last-child {
+  position: absolute;
+}
+
+.nav-menu_ol li:last-child {
+  bottom: 0;
+}
+
+/* Options bar */
+.options-nav {
+  min-width: 20.625rem;
+  border-right: 2px solid #858585;
+  padding: 2.5em 0 0 2.5em;
+}
+
+.options-nav_ul {
+  height: 60%;
+}
+
+.options-nav_ul .icon {
+  width: 2em;
+  height: 2em;
+  position: relative;
+  top: 8px;
+}
+
+.options-nav_ul li > a {
+  margin-left: 1em;
+}
+
+.settings-tittle_options {
+  display: inline;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.options-nav_ul a {
+  font-size: 1.75rem;
+  color: #858585;
+}
+
+.options-nav_ul li:first-child a {
+  color: #000;
 }
