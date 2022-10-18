@@ -1,22 +1,19 @@
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
-body {
+html, body { height: 100%; }
+
+
+.body-container{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  display: flex;
+  max-width: 1728px;
   font-family: "Roboto", sans-serif;
 }
 
-.contanier {
-  max-width: 1728px;
-  min-height: 100vh;
-}
-
-.contanier > * {
-  /* padding-top: 40px; */
-}
 ol,
 ul {
   list-style: none;
@@ -32,24 +29,21 @@ a {
   display: flex;
 }
 
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
 /* Navigation bar */
-.nav-menu_ol,
-.options-nav_ul {
-  flex-direction: column;
-  justify-content: space-between;
+.nav-menu {
+  text-align: center;
 }
 
-.nav-menu_ol {
-  min-height: 60%;
-}
-
-.nav-menu_ol {
-  align-items: center;
-}
+.nav-menu_ol li{ line-height: 7em; }
 
 .nav-menu {
   background-color: #ffc297;
-  padding: 2.5em;
+  padding: 2.5em 2.5em 0 2.5em;
 }
 
 .logo-image,
@@ -58,16 +52,10 @@ a {
   height: 65px;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-}
-.nav-menu_ol li:last-child {
-  position: absolute;
-}
 
 .nav-menu_ol li:last-child {
-  bottom: 0;
+  position: absolute;
+  bottom: 2.5em;
 }
 
 /* Options bar */
@@ -77,15 +65,17 @@ a {
   padding: 2.5em 0 0 2.5em;
 }
 
-.options-nav_ul {
-  height: 60%;
+.options-nav_ul li:first-child {
+  margin-bottom: 1em;
+}
+
+.options-nav_ul li {
+  line-height: 7em;
 }
 
 .options-nav_ul .icon {
-  width: 2em;
-  height: 2em;
   position: relative;
-  top: 8px;
+  top: 13px;
 }
 
 .options-nav_ul li > a {
@@ -105,4 +95,23 @@ a {
 
 .options-nav_ul li:first-child a {
   color: #000;
+}
+
+/* form */
+.form-section {
+  padding: 2em 0 0 13em;
+  /* width: 100%; */
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section input {
+  height: 4.375rem;
+}
+
+.form-section label {
+  font-size: 3rem;
 }
