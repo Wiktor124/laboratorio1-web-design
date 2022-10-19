@@ -41,40 +41,65 @@
     </ul>
 
   </section>
-  <section class="form-section">
-    <!-- <img src="img/two.png" alt="" class="profile-bell"> -->
 
-    <div>
-      <h2>Edit profile</h2>
-      <img src="img/men.png" alt="">
+  <section class="form-section">
+    
+    <div class="profile">
+      <img src="img/two.png" alt="" class="profile-bell">
+      <div class="profile-tittle">
+        <h2>Edit profile</h2>
+      <img src="img/men.png" alt="Foto de perfil">
+      </div>
     </div>
+
     <form>
-      <div>
-        <label for="fname">First name</label>
-        <input id="fname" type="text" name="First Name" value="Mehrab" required>
-        <label for="fname">Last name</label>
-        <input id="lname" type="text" name="Last Name" value="Bozorgi" required>  
+
+      <div class="form-block_flex">
+        
+        <div class="form-block">
+          <label for="fname">First name</label>
+          <input id="fname" type="text" name="First Name" placeholder="Mehrab" required class="form-block">
+        </div>
+        <div class="form-block">
+          <label for="fname">Last name</label>
+          <input id="lname" type="text" name="Last Name" placeholder="Bozorgi" required class="form-block">
+        </div>
+
       </div>
-     <label for="email">Email</label>
-      <input id="email" type="email" name="Email" value="Mehrabbozorgi.business@gmail.com" required>
+      
+      <label for="email">Email</label>
+      <input id="email" type="email" name="Email" placeholder="Mehrabbozorgi.business@gmail.com" required>
       <label for="address">Address</label>
-      <input id="address" type="text" name="address" value="33062 Zboncak isle" required>
+      <input id="address" type="text" name="address" placeholder="33062 Zboncak isle" required>
       <label for="number">Contact Number</label>
-      <input id="number" type="number" name="number" value="58077.79" required>
-      <div>
-        <label for="city">City</label>
-        <select name="city" id="city">
-          <option value="1">Mehrab</option>
-        </select>
-        <label for="state">State</label>
-        <select name="state" id="state">
-          <option value="2">Bozorgi</option>
-        </select>
+      <input id="number" type="number" name="number" placeholder="58077.79" required>
+
+      <div class="form-block_flex">
+
+        <div class="form-block">
+          <label for="city">City</label>
+          <select name="city" id="city" class="form-block select-option_form">
+            <option value="1" class="select-option_form">Mehrab</option>
+          </select>
+        </div>
+        <div class="form-block">
+          <label for="state">State</label>
+          <select name="state" id="state" class="form-block select-option_form">
+            <option value="2" class="select-option_form">Bozorgi</option>
+          </select>
+        </div>
+        
       </div>
+
       <label for="password">Password</label>
-      <input id="password" type="password" name="password" value="sbdfbnd65sfdvb s" required>
-      <input type="reset" value="Cancel">
-      <input type="submit" value="Save">
+      <input id="password" type="password" name="password" placeholder="sbdfbnd65sfdvb s" required>
+
+      <div class="buttons-form">
+        
+        <input type="reset" value="Cancel" class="buttons cancel">
+        <input type="submit" value="Save" class="buttons save">
+        
+      </div>
     </form>
 
   </section>

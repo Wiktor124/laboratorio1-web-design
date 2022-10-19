@@ -2,14 +2,16 @@ html {
   font-size: 62.5%;
 }
 
-html, body { height: 100%; }
-
-
-.body-container{
+html,
+body {
+  height: 100%;
+}
+  
+.body-container {
+  display: flex;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: flex;
   max-width: 1728px;
   font-family: "Roboto", sans-serif;
 }
@@ -39,7 +41,9 @@ a {
   text-align: center;
 }
 
-.nav-menu_ol li{ line-height: 7em; }
+.nav-menu_ol li {
+  line-height: 7em;
+}
 
 .nav-menu {
   background-color: #ffc297;
@@ -51,7 +55,6 @@ a {
   width: 65px;
   height: 65px;
 }
-
 
 .nav-menu_ol li:last-child {
   position: absolute;
@@ -99,19 +102,86 @@ a {
 
 /* form */
 .form-section {
-  padding: 2em 0 0 13em;
-  /* width: 100%; */
+  padding: 64px 13em 0 13em;
+  flex-basis: 100%;
+}
+
+.profile {
+  text-align: right;
+}
+
+.profile-tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+  max-width: 900px;
+}
+
+.profile-tittle h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.form-section ::placeholder {
+  color: #858585;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .form-section form {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+}
+
+.form-block_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
 }
 
 .form-section input {
-  height: 4.375rem;
+  border: 2px solid #858585;
 }
 
-.form-section label {
-  font-size: 3rem;
+.form-section input, .select-option_form {
+  padding: 1.3125em;
+  border-radius: 5px;
 }
+
+.form-section label, .label-select{
+  margin: 18px 0 8px 0;
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+
+.form-block {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.buttons {
+  font-size: 1.75rem;
+  font-weight:400;
+  border-radius: 5px;
+  margin-top: 55px;
+}
+
+.cancel{
+  margin-right: 40px;
+  color: #FF7008 !important;
+  background-color: unset !important;
+  border: 2px solid #FF7008 !important;
+  padding: calc(0.6875em - 2px) calc(2.9375em - 2px) !important;
+}
+
+.save{
+  color: #fff !important;
+  background-color: #FF7008 !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 0.6875em 2.9375em !important;
+}
+
