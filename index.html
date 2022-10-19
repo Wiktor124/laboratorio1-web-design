@@ -1,65 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <title>Laboratorio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div>
-    <ol>
-      <li><a href="#"><img src="imagenes/logo.png" alt=""></a></li>
-      <li><a href="#"><img src="imagenes/home.png" alt=""></a></li>
-      <li><a href="#"><img src="imagenes/Notifications.png" alt=""></a></li>
-      <li><a href="#"><img src="imagenes/Calendar today.png" alt=""></a></li>
-      <li><a href="#"><img src="imagenes/Show chart.png" alt=""></a></li>
-      <li><a href="#"><img src="imagenes/Person.png" alt=""></a></li>
-      <li><a href="#"><img src="imagenes/tuerca.png" alt=""></a></li>
+
+<body class="body-container">
+  <nav class="nav-menu">
+
+    <ol class="nav-menu_ol">
+      <li><a href="#"><img src="img/logo.png" alt="" class="logo-image"></a></li>
+      <li><a href="#"><img src="icon/home.svg" alt="" class="icon"></a></li>
+      <li><a href="#"><img src="icon/bell-nav.svg" alt="" class="icon"></a></li>
+      <li><a href="#"><img src="icon/calendar.svg" alt="" class="icon"></a></li>
+      <li><a href="#"><img src="icon/stadistic.svg" alt="" class="icon"></a></li>
+      <li><a href="#"><img src="icon/profile.svg" alt="" class="icon"></a></li>
+      <li><a href="#"><img src="img/tuerca.png" alt="" class="setting-image"></a></li>
     </ol>
-  </div>
-  <section>
-    <h2>settings</h2>
-    <ul>
-      <li><img src="imagenes/edit.png" alt="">Edit profile</li>
-      <li><img src="imagenes/Notificationsg.png" alt="">Notifications</li>
-      <li><img src="imagenes/Lock.png" alt="">Security</li>
-      <li><img src="imagenes/Settings.png" alt="">Appearance</li>
-      <li><img src="imagenes/Help outline.png" alt="">Help</li>
+
+  </nav>
+  <section class="options-nav">
+
+    <ul class="options-nav_ul">
+      <li>
+        <img src="icon/left-arrow.svg" alt="" class="icon">
+        <h2 class="settings-tittle_options">settings</h2>
+      </li>
+      <li><img src="icon/pen.svg" alt="" class="icon"><a href="#">Edit profile</a></li>
+      <li><img src="icon/bell-option.svg" alt="" class="icon"><a href="#">Notifications</a></li>
+      <li><img src="icon/lock.svg" alt="" class="icon"><a href="#">Security</a></li>
+      <li><img src="icon/settings.svg" alt="" class="icon"><a href="#">Appearance</a></li>
+      <li><img src="icon/help.svg" alt="" class="icon"><a href="#">Help</a></li>
     </ul>
+
   </section>
-  <br>
-  <section>
-    <img src="imagenes/two.png" alt="">
-    <div>
-      <h2>Edit profile</h2>
-      <img src="imagenes/men.png" alt="">
+
+  <section class="form-section">
+    
+    <div class="profile">
+      <img src="img/two.png" alt="" class="profile-bell">
+      <div class="profile-tittle">
+        <h2>Edit profile</h2>
+      <img src="img/men.png" alt="Foto de perfil">
+      </div>
     </div>
-    <form >
-      <label for="fname">First name</label>
-      <input id="fname" type="text" name="First Name" value="Mehrab" required>
-      <label for="fname">Last name</label>
-      <input id="lname" type="text" name="Last Name" value="Bozorgi" required>
+
+    <form>
+
+      <div class="form-block_flex">
+        
+        <div class="form-block">
+          <label for="fname">First name</label>
+          <input id="fname" type="text" name="First Name" placeholder="Mehrab" required class="form-block">
+        </div>
+        <div class="form-block">
+          <label for="fname">Last name</label>
+          <input id="lname" type="text" name="Last Name" placeholder="Bozorgi" required class="form-block">
+        </div>
+
+      </div>
+      
       <label for="email">Email</label>
-      <input id="email" type="email" name="Email" value="Mehrabbozorgi.business@gmail.com" required>
+      <input id="email" type="email" name="Email" placeholder="Mehrabbozorgi.business@gmail.com" required>
       <label for="address">Address</label>
-      <input id="address" type="text" name="address" value="33062 Zboncak isle" required>
+      <input id="address" type="text" name="address" placeholder="33062 Zboncak isle" required>
       <label for="number">Contact Number</label>
-      <input id="number" type="number" name="number" value="58077.79" required>
-      <label for="city">City</label>
-      <select name="city" id="city">
-        <option value="1">Mehrab</option>
-      </select>
-      <label for="state">State</label>
-      <select name="state" id="state">
-        <option value="2">Bozorgi</option>
-      </select>
+      <input id="number" type="number" name="number" placeholder="58077.79" required>
+
+      <div class="form-block_flex">
+
+        <div class="form-block">
+          <label for="city">City</label>
+          <select name="city" id="city" class="form-block select-option_form">
+            <option value="1" class="select-option_form">Mehrab</option>
+          </select>
+        </div>
+        <div class="form-block">
+          <label for="state">State</label>
+          <select name="state" id="state" class="form-block select-option_form">
+            <option value="2" class="select-option_form">Bozorgi</option>
+          </select>
+        </div>
+        
+      </div>
+
       <label for="password">Password</label>
-      <input id="password" type="password" name="password" value="sbdfbnd65sfdvb s" required>
-      <input type="reset" value="Cancel">
-      <input type="submit" value="Save">
+      <input id="password" type="password" name="password" placeholder="sbdfbnd65sfdvb s" required>
+
+      <div class="buttons-form">
+        
+        <input type="reset" value="Cancel" class="buttons cancel">
+        <input type="submit" value="Save" class="buttons save">
+        
+      </div>
     </form>
+
   </section>
 </body>
+
 </html>

@@ -1,0 +1,187 @@
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+  
+.body-container {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1728px;
+  font-family: "Roboto", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-nav {
+  display: flex;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Navigation bar */
+.nav-menu {
+  text-align: center;
+}
+
+.nav-menu_ol li {
+  line-height: 7em;
+}
+
+.nav-menu {
+  background-color: #ffc297;
+  padding: 2.5em 2.5em 0 2.5em;
+}
+
+.logo-image,
+.setting-image {
+  width: 65px;
+  height: 65px;
+}
+
+.nav-menu_ol li:last-child {
+  position: absolute;
+  bottom: 2.5em;
+}
+
+/* Options bar */
+.options-nav {
+  min-width: 20.625rem;
+  border-right: 2px solid #858585;
+  padding: 2.5em 0 0 2.5em;
+}
+
+.options-nav_ul li:first-child {
+  margin-bottom: 1em;
+}
+
+.options-nav_ul li {
+  line-height: 7em;
+}
+
+.options-nav_ul .icon {
+  position: relative;
+  top: 13px;
+}
+
+.options-nav_ul li > a {
+  margin-left: 1em;
+}
+
+.settings-tittle_options {
+  display: inline;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.options-nav_ul a {
+  font-size: 1.75rem;
+  color: #858585;
+}
+
+.options-nav_ul li:first-child a {
+  color: #000;
+}
+
+/* form */
+.form-section {
+  padding: 64px 13em 0 13em;
+  flex-basis: 100%;
+}
+
+.profile {
+  text-align: right;
+}
+
+.profile-tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+  max-width: 900px;
+}
+
+.profile-tittle h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.form-section ::placeholder {
+  color: #858585;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+
+.form-block_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+}
+
+.form-section input {
+  border: 2px solid #858585;
+}
+
+.form-section input, .select-option_form {
+  padding: 1.3125em;
+  border-radius: 5px;
+}
+
+.form-section label, .label-select{
+  margin: 18px 0 8px 0;
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+
+.form-block {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.buttons {
+  font-size: 1.75rem;
+  font-weight:400;
+  border-radius: 5px;
+  margin-top: 55px;
+}
+
+.cancel{
+  margin-right: 40px;
+  color: #FF7008 !important;
+  background-color: unset !important;
+  border: 2px solid #FF7008 !important;
+  padding: calc(0.6875em - 2px) calc(2.9375em - 2px) !important;
+}
+
+.save{
+  color: #fff !important;
+  background-color: #FF7008 !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 0.6875em 2.9375em !important;
+}
+
