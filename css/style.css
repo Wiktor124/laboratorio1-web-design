@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
 }
-  
+
 .body-container {
   display: flex;
   box-sizing: border-box;
@@ -81,7 +81,7 @@ a {
   top: 13px;
 }
 
-.options-nav_ul li > a {
+.options-nav_ul li>a {
   margin-left: 1em;
 }
 
@@ -145,12 +145,14 @@ a {
   border: 2px solid #858585;
 }
 
-.form-section input, .select-option_form {
+.form-section input,
+.select-option_form {
   padding: 1.3125em;
   border-radius: 5px;
 }
 
-.form-section label, .label-select{
+.form-section label,
+.label-select {
   margin: 18px 0 8px 0;
   font-weight: 600;
   font-size: 1.625rem;
@@ -164,12 +166,12 @@ a {
 
 .buttons {
   font-size: 1.75rem;
-  font-weight:400;
   border-radius: 5px;
   margin-top: 55px;
+  font-weight: 600;
 }
 
-.cancel{
+.cancel {
   margin-right: 40px;
   color: #FF7008 !important;
   background-color: unset !important;
@@ -177,11 +179,96 @@ a {
   padding: calc(0.6875em - 2px) calc(2.9375em - 2px) !important;
 }
 
-.save{
+.save {
   color: #fff !important;
   background-color: #FF7008 !important;
   border: none !important;
-  font-weight: 600;
   padding: 0.6875em 2.9375em !important;
 }
 
+/*Media de tablet*/
+@media (max-width: 1024px) {
+
+  .sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* Navigation bar */
+  .body-container {
+    display: block;
+  }
+
+  .nav-menu_ol li {
+    display: inline;
+  }
+
+  .nav-menu_ol li:first-child {
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+  }
+
+  .nav-menu_ol li:last-child {
+    left: 1em;
+    top: 12.5em;
+  }
+
+  .nav-menu_ol li {
+    margin-right: 5em;
+  }
+
+  /* Options bar */
+  .options-nav li {
+    display: inline;
+    margin-left: 7%;
+  }
+
+  .options-nav_ul{
+    margin-left: 5%;
+  }
+
+  /* form */
+  .foto {
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    width: 85px;
+    border:white 3px;
+    border-style: solid;
+    border-radius: 50px;
+  }
+
+  .form-block_flex {
+    display: block;
+  }
+
+  .profile-tittle {
+    justify-content: center;
+  }
+
+  .form-block{
+    margin: 18px 0 8px 0;
+  }
+
+  .buttons-form{
+    padding-bottom: 5em ;
+  }
+
+  .save:hover{
+    background-color: #d75d05 !important;
+  }
+
+  .cancel:hover{
+    background-color: #eeeeee !important;
+  }
+  input {
+    caret-color: #d75d05;
+  }
+  
+}
