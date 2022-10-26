@@ -162,6 +162,10 @@ a {
   border: 2px solid #858585;
 }
 
+.form-section input[type="number"] {
+  margin-bottom: 18px;
+}
+
 .form-section input,
 .select-option_form {
   padding: 1.3125em;
@@ -179,6 +183,10 @@ a {
   display: block;
   box-sizing: border-box;
   width: 100%;
+}
+
+.form-block input, .form-block select{
+  margin-top: 8px;
 }
 
 .buttons {
